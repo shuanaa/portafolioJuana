@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ═══ SEO Meta Tags ═══ -->
+    <title>Juana Monteagudo | Full Stack Developer &amp; AI Automation Engineer</title>
+    <meta name="description" content="Portfolio de Juana Monteagudo, Full Stack Developer especializada en React, Node.js, automatización e inteligencia artificial. Proyectos, experiencia y contacto.">
+    <meta name="keywords" content="Juana Monteagudo, full stack developer, desarrolladora web, React, Node.js, TypeScript, automatización, inteligencia artificial, SQL, Power BI, Buenos Aires, Argentina">
+    <meta name="author" content="Juana Monteagudo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shuanaa.github.io/portafolioJuana/main.html">
+
+    <!-- ═══ Open Graph ═══ -->
+    <meta property="og:title" content="Juana Monteagudo | Full Stack Developer">
+    <meta property="og:description" content="Desarrollo web full stack, automatización e inteligencia artificial. Conocé mis proyectos y experiencia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shuanaa.github.io/portafolioJuana/main.html">
+    <meta property="og:image" content="https://shuanaa.github.io/portafolioJuana/public/images/juanafoto.jpg">
+    <meta property="og:site_name" content="Juana Monteagudo">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- ═══ Twitter Card ═══ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Juana Monteagudo | Full Stack Developer">
+    <meta name="twitter:description" content="Desarrollo web full stack, automatización e inteligencia artificial. Conocé mis proyectos y experiencia.">
+    <meta name="twitter:image" content="https://shuanaa.github.io/portafolioJuana/public/images/juanafoto.jpg">
+
+    <!-- ═══ JSON-LD: Person ═══ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Juana Monteagudo",
+        "url": "https://shuanaa.github.io/portafolioJuana/main.html",
+        "image": "https://shuanaa.github.io/portafolioJuana/public/images/juanafoto.jpg",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer especializada en React, Node.js, automatización e inteligencia artificial. Licenciada en Sistemas (UADE).",
+        "email": "mailto:jotacaos2002@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Quilmes",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/juana-monteagudo-6a81321b8/"
+        ],
+        "knowsAbout": [
+            "React", "Node.js", "TypeScript", "SQL", "Python", "Power BI", "Automatización", "Inteligencia Artificial"
+        ]
+    }
+    </script>
+
+    <!-- ═══ Favicon ═══ -->
+    <link rel="icon" type="image/svg+xml" href="public/images/jm-watermark.svg" />
+    <link rel="shortcut icon" href="public/images/jm-watermark.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="assets/css/personal.css">
+</head>
+<body>
+
+    <!-- ===== TOP NAV ===== -->
+    <header class="nav">
+        <div class="nav__left">
+            <span class="nav__name">JUANA</span>
+            <span class="nav__sub">MONTEAGUDO</span>
+        </div>
+        <div class="nav__center">
+            <span>FULL STACK DEVELOPER</span>
+            <span>PORTFOLIO / 2026</span>
+        </div>
+        <div class="nav__right">
+            <a href="#contactanos" class="nav__contact">CONTACT</a>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <main class="hero">
+
+        <!-- Line 1: JUANA —— MONTEAGUDO  (each letter is a span.char for individual hover) -->
+        <div class="hero__row">
+            <div class="hero__line-mask">
+                <h1 class="hero__giant hero__giant--1">
+
+                    <!-- Left word — change text here -->
+                    <span class="hero__word hero__word--left" data-word="JUANA">
+                        <span class="char">J</span><span class="char">U</span><span class="char">A</span><span class="char">N</span><span class="char">A</span>
+                    </span>
+
+                    <!-- Typographic dash (expands on scroll) -->
+                    <span class="hero__dash">&mdash;&mdash;</span>
+
+                    <!-- Right word — change text here -->
+                    <span class="hero__word hero__word--right" data-word="MONTEAGUDO">
+                        <span class="char">M</span><span class="char">O</span><span class="char">N</span><span class="char">T</span><span class="char">E</span><span class="char">A</span><span class="char">G</span><span class="char">U</span><span class="char">D</span><span class="char">O</span>
+                    </span>
+
+                </h1>
+            </div>
+        </div>
+
+        <!-- Line 2: DEVELOPER (each letter wrapped for hover) -->
+        <div class="hero__row hero__row--2">
+            <div class="hero__line-mask">
+                <h2 class="hero__giant hero__giant--2">
+                    <span class="char">D</span><span class="char">E</span><span class="char">V</span><span class="char">E</span><span class="char">L</span><span class="char">O</span><span class="char">P</span><span class="char">E</span><span class="char">R</span>
+                </h2>
+            </div>
+
+            <!-- About block (right side, overlapping line 2) -->
+            <div class="hero__about">
+                <span class="hero__about-label">ABOUT</span>
+                <p class="hero__about-text">
+                    Full Stack Developer enfocada en construir aplicaciones web sólidas y soluciones de automatización
+                    con inteligencia artificial, cuidando cada detalle del código y la experiencia de usuario.
+                </p>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero__scroll">
+            <span>Scroll down</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+
+        <!-- Scroll arrow bottom-right -->
+        <a href="#quienes-somos" class="hero__arrow" aria-label="Ir a Quiénes Somos">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
+
+    </main>
+
+    <!-- ===== ABOUT MOBILE (visible only on mobile, below hero) ===== -->
+    <section class="about-mobile">
+        <span class="about-mobile__label">ABOUT</span>
+        <p class="about-mobile__text">
+            Full Stack Developer enfocada en construir aplicaciones web, plataformas y soluciones de automatización
+            con inteligencia artificial. Licenciada en Sistemas (UADE), con experiencia en React, Node.js, TypeScript,
+            SQL y Power BI.
+        </p>
+    </section>
+
+    <!-- Gradient divider: Hero → Quiénes Somos -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ===== SECCIÓN: QUIÉNES SOMOS ===== -->
+    <section id="quienes-somos" class="section-quienes">
+
+        <!-- Circuit-line decorations for this section -->
+        <svg class="circuit-section circuit-section--qs" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- 1 top-left, H→V→H -->
+            <g class="circuit-line" style="--dur:5s;--delay:0s;">
+                <path d="M 15 40 H 85 V 140 H 160" pathLength="1" class="circuit-base"/>
+                <path d="M 15 40 H 85 V 140 H 160" pathLength="1" class="circuit-light"/>
+                <circle cx="160" cy="140" r="4" class="circuit-node"/>
+            </g>
+            <!-- 2 top-left, short V→H -->
+            <g class="circuit-line" style="--dur:3.5s;--delay:2.8s;">
+                <path d="M 60 10 V 75 H 125" pathLength="1" class="circuit-base"/>
+                <path d="M 60 10 V 75 H 125" pathLength="1" class="circuit-light"/>
+                <circle cx="125" cy="75" r="3.5" class="circuit-node"/>
+            </g>
+            <!-- 3 top-left, tiny H→V -->
+            <g class="circuit-line" style="--dur:3s;--delay:7s;">
+                <path d="M 10 190 H 55 V 245" pathLength="1" class="circuit-base"/>
+                <path d="M 10 190 H 55 V 245" pathLength="1" class="circuit-light"/>
+                <circle cx="55" cy="245" r="3" class="circuit-node"/>
+            </g>
+            <!-- 4 top-right, long zigzag -->
+            <g class="circuit-line" style="--dur:7s;--delay:1.2s;">
+                <path d="M 1425 35 H 1350 V 130 H 1275 V 200" pathLength="1" class="circuit-base"/>
+                <path d="M 1425 35 H 1350 V 130 H 1275 V 200" pathLength="1" class="circuit-light"/>
+                <circle cx="1275" cy="200" r="4.5" class="circuit-node"/>
+            </g>
+            <!-- 5 top-right, short V→H -->
+            <g class="circuit-line" style="--dur:4s;--delay:5s;">
+                <path d="M 1390 150 H 1320 V 85" pathLength="1" class="circuit-base"/>
+                <path d="M 1390 150 H 1320 V 85" pathLength="1" class="circuit-light"/>
+                <circle cx="1320" cy="85" r="3.5" class="circuit-node"/>
+            </g>
+            <!-- 6 top-right, tiny V→H -->
+            <g class="circuit-line" style="--dur:3.2s;--delay:8.5s;">
+                <path d="M 1430 220 V 270 H 1375" pathLength="1" class="circuit-base"/>
+                <path d="M 1430 220 V 270 H 1375" pathLength="1" class="circuit-light"/>
+                <circle cx="1375" cy="270" r="3" class="circuit-node"/>
+            </g>
+            <!-- 7 left mid, H→V→H -->
+            <g class="circuit-line" style="--dur:5s;--delay:6s;">
+                <path d="M 10 420 H 70 V 350 H 135" pathLength="1" class="circuit-base"/>
+                <path d="M 10 420 H 70 V 350 H 135" pathLength="1" class="circuit-light"/>
+                <circle cx="135" cy="350" r="4" class="circuit-node"/>
+            </g>
+            <!-- 8 left lower, V→H -->
+            <g class="circuit-line" style="--dur:4.5s;--delay:3s;">
+                <path d="M 25 560 V 500 H 90" pathLength="1" class="circuit-base"/>
+                <path d="M 25 560 V 500 H 90" pathLength="1" class="circuit-light"/>
+                <circle cx="90" cy="500" r="3.5" class="circuit-node"/>
+            </g>
+            <!-- 9 right mid, H→V→H -->
+            <g class="circuit-line" style="--dur:6s;--delay:4s;">
+                <path d="M 1435 400 H 1365 V 330 H 1295" pathLength="1" class="circuit-base"/>
+                <path d="M 1435 400 H 1365 V 330 H 1295" pathLength="1" class="circuit-light"/>
+                <circle cx="1295" cy="330" r="4" class="circuit-node"/>
+            </g>
+            <!-- 10 right lower, V→H→V -->
+            <g class="circuit-line" style="--dur:5.5s;--delay:1.5s;">
+                <path d="M 1420 580 V 520 H 1350 V 465" pathLength="1" class="circuit-base"/>
+                <path d="M 1420 580 V 520 H 1350 V 465" pathLength="1" class="circuit-light"/>
+                <circle cx="1350" cy="465" r="4" class="circuit-node"/>
+            </g>
+            <!-- 11 bottom-left, V→H→V -->
+            <g class="circuit-line" style="--dur:6s;--delay:3.5s;">
+                <path d="M 20 780 V 710 H 95 V 650" pathLength="1" class="circuit-base"/>
+                <path d="M 20 780 V 710 H 95 V 650" pathLength="1" class="circuit-light"/>
+                <circle cx="95" cy="650" r="4" class="circuit-node"/>
+            </g>
+            <!-- 12 bottom-left, short H→V -->
+            <g class="circuit-line" style="--dur:3.5s;--delay:9s;">
+                <path d="M 80 870 H 140 V 810" pathLength="1" class="circuit-base"/>
+                <path d="M 80 870 H 140 V 810" pathLength="1" class="circuit-light"/>
+                <circle cx="140" cy="810" r="3" class="circuit-node"/>
+            </g>
+            <!-- 13 bottom-right, H→V→H -->
+            <g class="circuit-line" style="--dur:5.5s;--delay:4.5s;">
+                <path d="M 1420 860 H 1345 V 780 H 1270" pathLength="1" class="circuit-base"/>
+                <path d="M 1420 860 H 1345 V 780 H 1270" pathLength="1" class="circuit-light"/>
+                <circle cx="1270" cy="780" r="4.5" class="circuit-node"/>
+            </g>
+            <!-- 14 bottom-right, short V→H -->
+            <g class="circuit-line" style="--dur:4s;--delay:6.5s;">
+                <path d="M 1360 890 V 830 H 1300" pathLength="1" class="circuit-base"/>
+                <path d="M 1360 890 V 830 H 1300" pathLength="1" class="circuit-light"/>
+                <circle cx="1300" cy="830" r="3.5" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <!-- Mobile circuit lines (portrait viewBox) -->
+        <svg class="circuit-section circuit-mobile" viewBox="0 0 400 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="circuit-line" style="--dur:5s;--delay:0s;">
+                <path d="M 10 30 H 60 V 120 H 130" pathLength="1" class="circuit-base"/>
+                <path d="M 10 30 H 60 V 120 H 130" pathLength="1" class="circuit-light"/>
+                <circle cx="130" cy="120" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4s;--delay:3s;">
+                <path d="M 390 50 H 340 V 140 H 280" pathLength="1" class="circuit-base"/>
+                <path d="M 390 50 H 340 V 140 H 280" pathLength="1" class="circuit-light"/>
+                <circle cx="280" cy="140" r="3.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:6s;--delay:1.5s;">
+                <path d="M 15 400 H 70 V 330 H 120" pathLength="1" class="circuit-base"/>
+                <path d="M 15 400 H 70 V 330 H 120" pathLength="1" class="circuit-light"/>
+                <circle cx="120" cy="330" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:5s;--delay:5s;">
+                <path d="M 385 450 H 330 V 380 H 275" pathLength="1" class="circuit-base"/>
+                <path d="M 385 450 H 330 V 380 H 275" pathLength="1" class="circuit-light"/>
+                <circle cx="275" cy="380" r="3.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:5.5s;--delay:3.5s;">
+                <path d="M 10 750 V 680 H 80 V 620" pathLength="1" class="circuit-base"/>
+                <path d="M 10 750 V 680 H 80 V 620" pathLength="1" class="circuit-light"/>
+                <circle cx="80" cy="620" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4.5s;--delay:7s;">
+                <path d="M 390 800 H 340 V 730 H 280" pathLength="1" class="circuit-base"/>
+                <path d="M 390 800 H 340 V 730 H 280" pathLength="1" class="circuit-light"/>
+                <circle cx="280" cy="730" r="4" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <!-- Título -->
+        <h2 class="qs__title">Sobre mí</h2>
+
+        <!-- Descripción -->
+        <p class="qs__desc">
+            Soy Licenciada en Sistemas (UADE) y desarrollo aplicaciones web full stack, soluciones de automatización
+            y plataformas SaaS. Me interesan la ingeniería de software, las tecnologías cloud y la inteligencia artificial,
+            y disfruto aprender herramientas nuevas para resolver problemas complejos de alto impacto.
+        </p>
+
+        <!-- Card propia -->
+        <div class="qs__cards qs__cards--single">
+
+            <article class="qs__card reveal-card">
+
+                <div class="qs__card-avatar">
+                    <img src="public/images/juanafoto.jpg" alt="Juana Monteagudo" />
+                </div>
+
+                <h3 class="qs__card-name">Juana Monteagudo</h3>
+                <span class="qs__card-role">Full Stack Developer / AI &amp; Automation Engineer</span>
+
+                <ul class="qs__card-terminal">
+                    <li>
+                        <span class="term-icon">&#x1F30D;</span>
+                        <span class="term-text" data-final="ARGENTINA, QUILMES"></span>
+                    </li>
+                    <li>
+                        <span class="term-icon">&#x2601;</span>
+                        <span class="term-text" data-final="REACT &bull; NODE &bull; TYPESCRIPT"></span>
+                    </li>
+                    <li class="qs__accent">
+                        <span class="term-icon">&#x25C8;</span>
+                        <span class="term-text" data-final="IA &bull; AUTOMATIZACIÓN"></span>
+                    </li>
+                </ul>
+
+                <!-- Links sociales -->
+                <div class="qs__card-links">
+                    <a href="https://www.linkedin.com/in/juana-monteagudo-6a81321b8/" target="_blank" rel="noopener" aria-label="LinkedIn de Juana Monteagudo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33 0-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05a3.74 3.74 0 013.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 112.06-2.06 2.06 2.06 0 01-2.06 2.06zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77A1.75 1.75 0 000 1.73v20.54A1.75 1.75 0 001.77 24h20.46A1.75 1.75 0 0024 22.27V1.73A1.75 1.75 0 0022.23 0z"/></svg>
+                    </a>
+                    <a href="mailto:jotacaos2002@gmail.com" aria-label="Email de Juana Monteagudo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Gradient divider: Quiénes Somos → Proyectos -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ===== SECCIÓN: PROYECTOS ===== -->
+    <section id="proyectos" class="section-proyectos">
+
+        <!-- Circuit-line decorations for this section -->
+        <svg class="circuit-section circuit-section--proy" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- 1 top-right, H→V→H -->
+            <g class="circuit-line" style="--dur:5.5s;--delay:0.5s;">
+                <path d="M 1430 50 H 1365 V 145 H 1290" pathLength="1" class="circuit-base"/>
+                <path d="M 1430 50 H 1365 V 145 H 1290" pathLength="1" class="circuit-light"/>
+                <circle cx="1290" cy="145" r="4" class="circuit-node"/>
+            </g>
+            <!-- 2 top-right, short V→H -->
+            <g class="circuit-line" style="--dur:3.5s;--delay:4s;">
+                <path d="M 1380 165 V 105 H 1310" pathLength="1" class="circuit-base"/>
+                <path d="M 1380 165 V 105 H 1310" pathLength="1" class="circuit-light"/>
+                <circle cx="1310" cy="105" r="3.5" class="circuit-node"/>
+            </g>
+            <!-- 3 top-right, tiny H→V -->
+            <g class="circuit-line" style="--dur:3s;--delay:8s;">
+                <path d="M 1435 210 H 1385 V 265" pathLength="1" class="circuit-base"/>
+                <path d="M 1435 210 H 1385 V 265" pathLength="1" class="circuit-light"/>
+                <circle cx="1385" cy="265" r="3" class="circuit-node"/>
+            </g>
+            <!-- 4 top-left, long H→V→H→V -->
+            <g class="circuit-line" style="--dur:7.5s;--delay:1.5s;">
+                <path d="M 15 45 H 80 V 140 H 150 V 215" pathLength="1" class="circuit-base"/>
+                <path d="M 15 45 H 80 V 140 H 150 V 215" pathLength="1" class="circuit-light"/>
+                <circle cx="150" cy="215" r="4.5" class="circuit-node"/>
+            </g>
+            <!-- 5 top-left, short V→H -->
+            <g class="circuit-line" style="--dur:4s;--delay:6.5s;">
+                <path d="M 55 15 V 80 H 120" pathLength="1" class="circuit-base"/>
+                <path d="M 55 15 V 80 H 120" pathLength="1" class="circuit-light"/>
+                <circle cx="120" cy="80" r="3.5" class="circuit-node"/>
+            </g>
+            <!-- 6 top-left, tiny V→H -->
+            <g class="circuit-line" style="--dur:3.2s;--delay:9.5s;">
+                <path d="M 10 185 V 235 H 65" pathLength="1" class="circuit-base"/>
+                <path d="M 10 185 V 235 H 65" pathLength="1" class="circuit-light"/>
+                <circle cx="65" cy="235" r="3" class="circuit-node"/>
+            </g>
+            <!-- 7 right mid, H→V→H -->
+            <g class="circuit-line" style="--dur:6s;--delay:3s;">
+                <path d="M 1435 450 H 1370 V 380 H 1300" pathLength="1" class="circuit-base"/>
+                <path d="M 1435 450 H 1370 V 380 H 1300" pathLength="1" class="circuit-light"/>
+                <circle cx="1300" cy="380" r="4" class="circuit-node"/>
+            </g>
+            <!-- 8 right lower, V→H -->
+            <g class="circuit-line" style="--dur:4.5s;--delay:5s;">
+                <path d="M 1425 570 V 510 H 1360" pathLength="1" class="circuit-base"/>
+                <path d="M 1425 570 V 510 H 1360" pathLength="1" class="circuit-light"/>
+                <circle cx="1360" cy="510" r="3.5" class="circuit-node"/>
+            </g>
+            <!-- 9 left mid, H→V→H -->
+            <g class="circuit-line" style="--dur:5.5s;--delay:2s;">
+                <path d="M 15 400 H 80 V 330 H 145" pathLength="1" class="circuit-base"/>
+                <path d="M 15 400 H 80 V 330 H 145" pathLength="1" class="circuit-light"/>
+                <circle cx="145" cy="330" r="4" class="circuit-node"/>
+            </g>
+            <!-- 10 left lower, V→H→V -->
+            <g class="circuit-line" style="--dur:5s;--delay:7s;">
+                <path d="M 20 590 V 530 H 85 V 475" pathLength="1" class="circuit-base"/>
+                <path d="M 20 590 V 530 H 85 V 475" pathLength="1" class="circuit-light"/>
+                <circle cx="85" cy="475" r="4" class="circuit-node"/>
+            </g>
+            <!-- 11 bottom-left, V→H→V -->
+            <g class="circuit-line" style="--dur:5s;--delay:2s;">
+                <path d="M 25 855 V 790 H 100 V 720" pathLength="1" class="circuit-base"/>
+                <path d="M 25 855 V 790 H 100 V 720" pathLength="1" class="circuit-light"/>
+                <circle cx="100" cy="720" r="4" class="circuit-node"/>
+            </g>
+            <!-- 12 bottom-left, tiny H→V -->
+            <g class="circuit-line" style="--dur:3.5s;--delay:5.5s;">
+                <path d="M 75 880 H 135 V 825" pathLength="1" class="circuit-base"/>
+                <path d="M 75 880 H 135 V 825" pathLength="1" class="circuit-light"/>
+                <circle cx="135" cy="825" r="3" class="circuit-node"/>
+            </g>
+            <!-- 13 bottom-right, H→V→H -->
+            <g class="circuit-line" style="--dur:5.5s;--delay:7s;">
+                <path d="M 1410 870 H 1340 V 800 H 1275" pathLength="1" class="circuit-base"/>
+                <path d="M 1410 870 H 1340 V 800 H 1275" pathLength="1" class="circuit-light"/>
+                <circle cx="1275" cy="800" r="4.5" class="circuit-node"/>
+            </g>
+            <!-- 14 bottom-right, V→H -->
+            <g class="circuit-line" style="--dur:4s;--delay:3.5s;">
+                <path d="M 1355 895 V 835 H 1290" pathLength="1" class="circuit-base"/>
+                <path d="M 1355 895 V 835 H 1290" pathLength="1" class="circuit-light"/>
+                <circle cx="1290" cy="835" r="3.5" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <!-- Mobile circuit lines -->
+        <svg class="circuit-section circuit-mobile" viewBox="0 0 400 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="circuit-line" style="--dur:5.5s;--delay:0.5s;">
+                <path d="M 390 40 H 330 V 130 H 270" pathLength="1" class="circuit-base"/>
+                <path d="M 390 40 H 330 V 130 H 270" pathLength="1" class="circuit-light"/>
+                <circle cx="270" cy="130" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4s;--delay:4s;">
+                <path d="M 10 60 H 70 V 150 H 140" pathLength="1" class="circuit-base"/>
+                <path d="M 10 60 H 70 V 150 H 140" pathLength="1" class="circuit-light"/>
+                <circle cx="140" cy="150" r="3.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:6s;--delay:2s;">
+                <path d="M 385 420 H 320 V 350 H 260" pathLength="1" class="circuit-base"/>
+                <path d="M 385 420 H 320 V 350 H 260" pathLength="1" class="circuit-light"/>
+                <circle cx="260" cy="350" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:5s;--delay:6s;">
+                <path d="M 15 500 V 440 H 80 V 380" pathLength="1" class="circuit-base"/>
+                <path d="M 15 500 V 440 H 80 V 380" pathLength="1" class="circuit-light"/>
+                <circle cx="80" cy="380" r="3.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:5.5s;--delay:3s;">
+                <path d="M 10 820 V 760 H 90 V 700" pathLength="1" class="circuit-base"/>
+                <path d="M 10 820 V 760 H 90 V 700" pathLength="1" class="circuit-light"/>
+                <circle cx="90" cy="700" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4.5s;--delay:7.5s;">
+                <path d="M 390 870 H 330 V 800 H 270" pathLength="1" class="circuit-base"/>
+                <path d="M 390 870 H 330 V 800 H 270" pathLength="1" class="circuit-light"/>
+                <circle cx="270" cy="800" r="4.5" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <h2 class="proy__title">Mis proyectos</h2>
+
+        <p class="proy__desc">
+            Una selección de los sitios y plataformas que construí.
+            Cada proyecto refleja mi obsesión por el detalle, la performance y el diseño.
+        </p>
+
+        <div class="proy__grid">
+
+            <!-- Proyecto 1 -->
+            <div class="proy__card reveal-card">
+                <div class="proy__card-thumb">
+                    <img src="public/images/estudioMonteagudo1.png" alt="Estudio Monteagudo" class="proy__card-img" />
+                    <div class="proy__card-overlay">
+                        <a href="https://estudiomonteagudo.com/" class="proy__card-btn" target="_blank" rel="noopener">Ver proyecto →</a>
+                    </div>
+                </div>
+                <div class="proy__card-body">
+                    <h3 class="proy__card-name">Estudio Monteagudo</h3>
+                    <p class="proy__card-desc">Sitio web profesional para estudio contable e impositivo.</p>
+                    <span class="proy__card-tag">Web Design &bull; Desarrollo &bull; UX</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="proy__card reveal-card">
+                <div class="proy__card-thumb">
+                    <img src="public/images/bcoolestropa2.png" alt="BcoolestRopa" class="proy__card-img" />
+                    <div class="proy__card-overlay">
+                        <a href="https://bcoolestropa.com/" class="proy__card-btn" target="_blank" rel="noopener">Ver proyecto →</a>
+                    </div>
+                </div>
+                <div class="proy__card-body">
+                    <h3 class="proy__card-name">BcoolestRopa</h3>
+                    <p class="proy__card-desc">Plataforma de e-commerce de ropa importada con catálogo y carrito.</p>
+                    <span class="proy__card-tag">E-commerce &bull; Sistema &bull; Tienda</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="proy__card reveal-card">
+                <div class="proy__card-thumb">
+                    <img src="public/images/panaderiaastorina.png" alt="Panadería Astorina" class="proy__card-img" />
+                    <div class="proy__card-overlay">
+                        <a href="https://panaderiaastorina.com/" class="proy__card-btn" target="_blank" rel="noopener">Ver proyecto →</a>
+                    </div>
+                </div>
+                <div class="proy__card-body">
+                    <h3 class="proy__card-name">Panadería Astorina</h3>
+                    <p class="proy__card-desc">Sitio web para panadería artesanal con catálogo y presencia online.</p>
+                    <span class="proy__card-tag">Web Design &bull; Desarrollo &bull; Branding</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 4: Under Construction (scroll-reactive) -->
+            <div class="proy__card reveal-card uc-card" id="uc-card-4">
+                <!-- Cinta overlay posicionada en la parte blanca -->
+                <img src="public/images/cintasdeconstruccion.webp" alt="Under Construction" class="uc-construction-overlay" />
+                
+                <div class="proy__card-thumb uc-thumb">
+                    <img src="public/images/vakburger.png" alt="Proyecto Tres" class="proy__card-img uc-img" />
+                    <span class="uc-badge">EN DESARROLLO</span>
+                </div>
+                <div class="proy__card-body">
+                    <h3 class="proy__card-name">Proyecto Tres</h3>
+                    <p class="proy__card-desc">En desarrollo con animaciones interactivas.</p>
+                    <span class="proy__card-tag">Vue &bull; Firebase &bull; Stripe</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gradient divider: Proyectos → Softwares -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ===== SECCIÓN: SOFTWARES ===== -->
+    <section id="softwares" class="section-softwares">
+
+        <!-- Circuit-line decorations for this section -->
+        <svg class="circuit-section circuit-section--sw" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="circuit-line" style="--dur:5s;--delay:0.5s;">
+                <path d="M 15 50 H 80 V 150 H 155" pathLength="1" class="circuit-base"/>
+                <path d="M 15 50 H 80 V 150 H 155" pathLength="1" class="circuit-light"/>
+                <circle cx="155" cy="150" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4s;--delay:3s;">
+                <path d="M 1430 60 H 1360 V 140 H 1290" pathLength="1" class="circuit-base"/>
+                <path d="M 1430 60 H 1360 V 140 H 1290" pathLength="1" class="circuit-light"/>
+                <circle cx="1290" cy="140" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:3.5s;--delay:6s;">
+                <path d="M 50 10 V 75 H 115" pathLength="1" class="circuit-base"/>
+                <path d="M 50 10 V 75 H 115" pathLength="1" class="circuit-light"/>
+                <circle cx="115" cy="75" r="3.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:6s;--delay:2s;">
+                <path d="M 1435 400 H 1370 V 330 H 1305" pathLength="1" class="circuit-base"/>
+                <path d="M 1435 400 H 1370 V 330 H 1305" pathLength="1" class="circuit-light"/>
+                <circle cx="1305" cy="330" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:5s;--delay:4.5s;">
+                <path d="M 20 780 V 710 H 90 V 650" pathLength="1" class="circuit-base"/>
+                <path d="M 20 780 V 710 H 90 V 650" pathLength="1" class="circuit-light"/>
+                <circle cx="90" cy="650" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4.5s;--delay:7s;">
+                <path d="M 1420 860 H 1350 V 790 H 1280" pathLength="1" class="circuit-base"/>
+                <path d="M 1420 860 H 1350 V 790 H 1280" pathLength="1" class="circuit-light"/>
+                <circle cx="1280" cy="790" r="4.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:3s;--delay:8.5s;">
+                <path d="M 10 430 H 55 V 485" pathLength="1" class="circuit-base"/>
+                <path d="M 10 430 H 55 V 485" pathLength="1" class="circuit-light"/>
+                <circle cx="55" cy="485" r="3" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <!-- Mobile circuit lines -->
+        <svg class="circuit-section circuit-mobile" viewBox="0 0 400 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="circuit-line" style="--dur:5s;--delay:0.5s;">
+                <path d="M 10 40 H 65 V 130 H 130" pathLength="1" class="circuit-base"/>
+                <path d="M 10 40 H 65 V 130 H 130" pathLength="1" class="circuit-light"/>
+                <circle cx="130" cy="130" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4.5s;--delay:3s;">
+                <path d="M 390 70 H 330 V 155 H 270" pathLength="1" class="circuit-base"/>
+                <path d="M 390 70 H 330 V 155 H 270" pathLength="1" class="circuit-light"/>
+                <circle cx="270" cy="155" r="3.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:5.5s;--delay:5s;">
+                <path d="M 15 700 V 640 H 80 V 580" pathLength="1" class="circuit-base"/>
+                <path d="M 15 700 V 640 H 80 V 580" pathLength="1" class="circuit-light"/>
+                <circle cx="80" cy="580" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4s;--delay:7s;">
+                <path d="M 385 780 H 325 V 710 H 265" pathLength="1" class="circuit-base"/>
+                <path d="M 385 780 H 325 V 710 H 265" pathLength="1" class="circuit-light"/>
+                <circle cx="265" cy="710" r="4" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <h2 class="sw__title">Softwares en los que trabajé</h2>
+
+        <p class="sw__desc">
+            Plataformas SaaS en las que participé como desarrolladora.
+            Software pensado para resolver problemas reales de forma eficiente.
+        </p>
+
+        <div class="sw__grid">
+
+            <!-- Software 1: KardexGo -->
+            <div class="sw__card reveal-card">
+                <div class="sw__card-avatar">
+                    <img src="public/images/kardexlogo.png" alt="KardexGo" />
+                </div>
+                <div class="sw__card-body">
+                    <h3 class="sw__card-name">KardexGo</h3>
+                    <p class="sw__card-desc">Sistema de gestión de inventario inteligente. Control de stock, movimientos y reportes en tiempo real.</p>
+                    <span class="sw__card-tag">SaaS &bull; Inventario &bull; Dashboard</span>
+                </div>
+                <div class="sw__card-preview">
+                    <img src="public/images/kodaipreview.png" alt="KardexGo Preview" />
+                </div>
+                <div class="sw__card-buttons">
+                    <a href="https://www.kardexgo.com" target="_blank" rel="noopener" class="sw__card-link-btn">Ir a KardexGo →</a>
+                    <a href="public/images/KardexGo Presentacion - Developed by Kodaiweb.pdf" download class="sw__card-pdf-btn">Descargar PDF</a>
+                </div>
+            </div>
+
+            <!-- Software 2: ContaSync -->
+            <div class="sw__card reveal-card">
+                <div class="sw__card-avatar sw__card-avatar--logo">
+                    <img src="public/images/constasync.png" alt="ContaSync Logo" />
+                </div>
+                <div class="sw__card-body">
+                    <h3 class="sw__card-name">ContaSync</h3>
+                    <p class="sw__card-desc">Software cloud para contadores que automatiza tareas contables, impositivas y facilita la gestión de clientes.</p>
+                    <span class="sw__card-tag">SaaS&bull; ARCA &bull; Automatizacion</span>
+                </div>
+                <div class="sw__card-preview">
+                    <img src="public/images/contasyncpreview.png" alt="ContaSync Preview" />
+                </div>
+            </div>
+
+            <!-- Software 3: Table Dash -->
+            <div class="sw__card reveal-card">
+                <div class="sw__card-avatar sw__card-avatar--logo">
+                    <img src="public/images/tabledash_logo.png" alt="Table Dash Logo" />
+                </div>
+                <div class="sw__card-body">
+                    <h3 class="sw__card-name">Table Dash</h3>
+                    <p class="sw__card-desc">Software para gestión de mesas y pedidos. Control de stock por plato y seguimiento de órdenes.</p>
+                    <span class="sw__card-tag">SaaS &bull; Gastronómico &bull; Pedidos</span>
+                </div>
+                <div class="sw__card-preview">
+                    <img src="public/images/table dash.png" alt="Table Dash Preview" />
+                </div>
+                <a href="public/images/Table-Dash Presentacion - Developed by Kodaiweb.pdf" download class="sw__card-pdf-btn">Descargar PDF</a>
+            </div>
+
+            <!-- Software 4: ATLAS - ERP -->
+            <div class="sw__card reveal-card">
+                <div class="sw__card-body">
+                    <h3 class="sw__card-name">ATLAS - ERP</h3>
+                    <p class="sw__card-desc">ERP para bodegas y distribuidoras. Gestión de clientes, facturación electrónica en ARCA, remitos, recibos, cuentas corrientes y stock en un solo dashboard.</p>
+                    <span class="sw__card-tag">SaaS &bull; ERP &bull; Gestión</span>
+                </div>
+                <div class="sw__card-preview">
+                    <img src="public/images/atlaserpfoto.png" alt="ATLAS - ERP Preview" />
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ═══════════════════  DIVIDER  ═══════════════════ -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ═══════════════════  CONTACTANOS  ═══════════════════ -->
+    <section id="contactanos" class="section-contactanos">
+
+        <!-- Animated gradient background layer -->
+        <div class="cta-bg" aria-hidden="true">
+            <div class="cta-bg__gradient"></div>
+            <div class="cta-bg__glow cta-bg__glow--1"></div>
+            <div class="cta-bg__glow cta-bg__glow--2"></div>
+            <div class="cta-bg__glow cta-bg__glow--3"></div>
+        </div>
+
+        <!-- Circuit-line decorations -->
+        <svg class="circuit-section circuit-section--contactanos" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="circuit-line" style="--dur:5.5s;--delay:0.5s;">
+                <path d="M 20 80 H 100 V 200 H 170" pathLength="1" class="circuit-base"/>
+                <path d="M 20 80 H 100 V 200 H 170" pathLength="1" class="circuit-light"/>
+                <circle cx="170" cy="200" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4s;--delay:3s;">
+                <path d="M 1420 100 H 1340 V 220 H 1270" pathLength="1" class="circuit-base"/>
+                <path d="M 1420 100 H 1340 V 220 H 1270" pathLength="1" class="circuit-light"/>
+                <circle cx="1270" cy="220" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:6s;--delay:5s;">
+                <path d="M 30 820 V 740 H 110 V 660" pathLength="1" class="circuit-base"/>
+                <path d="M 30 820 V 740 H 110 V 660" pathLength="1" class="circuit-light"/>
+                <circle cx="110" cy="660" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4.5s;--delay:7s;">
+                <path d="M 1410 830 H 1340 V 760 H 1260" pathLength="1" class="circuit-base"/>
+                <path d="M 1410 830 H 1340 V 760 H 1260" pathLength="1" class="circuit-light"/>
+                <circle cx="1260" cy="760" r="4.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:7s;--delay:2s;">
+                <path d="M 700 10 V 70 H 780 V 130" pathLength="1" class="circuit-base"/>
+                <path d="M 700 10 V 70 H 780 V 130" pathLength="1" class="circuit-light"/>
+                <circle cx="780" cy="130" r="3.5" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:5s;--delay:9s;">
+                <path d="M 1430 450 H 1380 V 540 H 1320" pathLength="1" class="circuit-base"/>
+                <path d="M 1430 450 H 1380 V 540 H 1320" pathLength="1" class="circuit-light"/>
+                <circle cx="1320" cy="540" r="3" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <!-- Mobile circuit lines -->
+        <svg class="circuit-section circuit-mobile" viewBox="0 0 400 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="circuit-line" style="--dur:5.5s;--delay:0.5s;">
+                <path d="M 10 60 H 70 V 160 H 140" pathLength="1" class="circuit-base"/>
+                <path d="M 10 60 H 70 V 160 H 140" pathLength="1" class="circuit-light"/>
+                <circle cx="140" cy="160" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4s;--delay:3s;">
+                <path d="M 390 80 H 330 V 170 H 270" pathLength="1" class="circuit-base"/>
+                <path d="M 390 80 H 330 V 170 H 270" pathLength="1" class="circuit-light"/>
+                <circle cx="270" cy="170" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:6s;--delay:5s;">
+                <path d="M 15 750 V 680 H 85 V 610" pathLength="1" class="circuit-base"/>
+                <path d="M 15 750 V 680 H 85 V 610" pathLength="1" class="circuit-light"/>
+                <circle cx="85" cy="610" r="4" class="circuit-node"/>
+            </g>
+            <g class="circuit-line" style="--dur:4.5s;--delay:7s;">
+                <path d="M 385 800 H 325 V 730 H 265" pathLength="1" class="circuit-base"/>
+                <path d="M 385 800 H 325 V 730 H 265" pathLength="1" class="circuit-light"/>
+                <circle cx="265" cy="730" r="4.5" class="circuit-node"/>
+            </g>
+        </svg>
+
+        <div class="cta-layout">
+
+            <!-- ── LEFT: Text + JM watermark behind ── -->
+            <div class="cta-left">
+                <!-- JM watermark (background, untouchable) -->
+                <img src="public/images/jm-watermark.svg" alt="" class="cta-watermark" aria-hidden="true" />
+
+                <!-- Foreground text content -->
+                <div class="cta-impact reveal-card">
+                <span class="cta-impact__tag">Juana Monteagudo</span>
+
+                <h2 class="cta-impact__title">
+                    ¿Buscás sumar a alguien a tu equipo?<br>
+                    <span class="cta-impact__title--gradient">Hablemos.</span>
+                </h2>
+
+                <p class="cta-impact__sub">
+                    Disponible para roles full stack, freelance o colaboraciones en proyectos con foco en producto.
+                </p>
+
+                <ul class="cta-impact__bullets">
+                    <li>
+                        <span class="cta-bullet__icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </span>
+                        Desarrollo Web Full Stack
+                    </li>
+                    <li>
+                        <span class="cta-bullet__icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </span>
+                        Automatización &amp; IA
+                    </li>
+                    <li>
+                        <span class="cta-bullet__icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        </span>
+                        Datos &amp; Reporting (SQL, Power BI)
+                    </li>
+                </ul>
+
+                <p class="cta-impact__response">
+                    <span class="cta-response__dot"></span>
+                    Respondo en menos de 24 hs.
+                </p>
+            </div>
+            </div><!-- /.cta-left -->
+
+            <!-- ── RIGHT: Glass form card ───────────────────────── -->
+            <div class="cta-card reveal-card">
+                <div class="cta-card__inner">
+                    <h3 class="cta-card__heading">Escribime</h3>
+                    <p class="cta-card__sub">Contactame por LinkedIn y te respondo a la brevedad.</p>
+
+                    <a href="https://www.linkedin.com/in/juana-monteagudo-6a81321b8/" target="_blank" rel="noopener" class="cta-form__submit cta-form__submit--linkedin">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33 0-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05a3.74 3.74 0 013.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 112.06-2.06 2.06 2.06 0 01-2.06 2.06zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77A1.75 1.75 0 000 1.73v20.54A1.75 1.75 0 001.77 24h20.46A1.75 1.75 0 0024 22.27V1.73A1.75 1.75 0 0022.23 0z"/></svg>
+                        <span class="cta-form__submit-text">Contactame en LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Hero interaction script (vanilla JS) -->
+    <script src="script.js"></script>
+
+    <!-- Hero meta visibility controller -->
+    <script src="script-meta.js"></script>
+
+    <!-- Scroll-reactive preview — solo Proyecto Tres -->
+    <script src="uc-scroll-reactive.js"></script>
+
+    <!-- Contact form: Formspree -->
+    <script src="script-contact.js"></script>
+</body>
+</html>

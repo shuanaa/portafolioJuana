@@ -1,0 +1,14 @@
+{
+  "name": "portafolio-juana",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfolio personal de Juana Monteagudo",
+  "homepage": "https://shuanaa.github.io/portafolioJuana/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shuanaa/portafolioJuana.git"
+  },
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}

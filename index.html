@@ -1,0 +1,1074 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ═══ SEO Meta Tags ═══ -->
+    <title>Juana Monteagudo | Full Stack Developer &amp; AI Automation Engineer</title>
+    <meta name="description" content="Portfolio de Juana Monteagudo, Full Stack Developer especializada en React, Node.js, automatización e inteligencia artificial. Proyectos, experiencia y contacto.">
+    <meta name="keywords" content="Juana Monteagudo, full stack developer, desarrolladora web, React, Node.js, TypeScript, automatización, inteligencia artificial, SQL, Power BI, Buenos Aires, Argentina">
+    <meta name="author" content="Juana Monteagudo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shuanaa.github.io/portafolioJuana/">
+
+    <!-- ═══ Open Graph ═══ -->
+    <meta property="og:title" content="Juana Monteagudo | Full Stack Developer">
+    <meta property="og:description" content="Desarrollo web full stack, automatización e inteligencia artificial. Conocé mis proyectos y experiencia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shuanaa.github.io/portafolioJuana/">
+    <meta property="og:image" content="https://shuanaa.github.io/portafolioJuana/public/images/juanafoto.jpg">
+    <meta property="og:site_name" content="Juana Monteagudo">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- ═══ Twitter Card ═══ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Juana Monteagudo | Full Stack Developer">
+    <meta name="twitter:description" content="Desarrollo web full stack, automatización e inteligencia artificial. Conocé mis proyectos y experiencia.">
+    <meta name="twitter:image" content="https://shuanaa.github.io/portafolioJuana/public/images/juanafoto.jpg">
+
+    <!-- ═══ JSON-LD: Person ═══ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Juana Monteagudo",
+        "url": "https://shuanaa.github.io/portafolioJuana/",
+        "image": "https://shuanaa.github.io/portafolioJuana/public/images/juanafoto.jpg",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer especializada en React, Node.js, automatización e inteligencia artificial. Licenciada en Sistemas (UADE).",
+        "email": "mailto:jotacaos2002@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Quilmes",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/juana-monteagudo-6a81321b8/"
+        ],
+        "knowsAbout": [
+            "React", "Node.js", "TypeScript", "SQL", "Python", "Power BI", "Automatización", "Inteligencia Artificial"
+        ]
+    }
+    </script>
+
+    <!-- ═══ Favicon ═══ -->
+    <link rel="icon" type="image/svg+xml" href="public/images/jm-watermark.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --kw-violet: #7A5CFF;
+            --kw-pink: #FF4FA3;
+            --kw-cyan: #38D9FF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f0f0f0;
+            min-height: 100vh;
+            overflow: hidden;
+            color: #333;
+        }
+
+        .loader-screen {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ── Animated background ── */
+        .loader-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .loader-bg__gradient {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 50% at 20% 30%, rgba(122, 92, 255, 0.08) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 80% 70%, rgba(255, 79, 163, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse 70% 60% at 50% 90%, rgba(56, 217, 255, 0.05) 0%, transparent 50%);
+            animation: bgShift 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes bgShift {
+            0%   { opacity: 0.8; transform: scale(1); }
+            50%  { opacity: 1;   transform: scale(1.05); }
+            100% { opacity: 0.9; transform: scale(1.02); }
+        }
+
+        .loader-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: glowPulse 6s ease-in-out infinite;
+        }
+
+        .loader-glow--1 {
+            width: 300px; height: 300px;
+            background: var(--kw-violet);
+            top: -5%; left: -3%;
+            opacity: 0.06;
+            animation-delay: 0s;
+        }
+
+        .loader-glow--2 {
+            width: 250px; height: 250px;
+            background: var(--kw-pink);
+            bottom: -5%; right: 5%;
+            opacity: 0.04;
+            animation-delay: 2s;
+        }
+
+        .loader-glow--3 {
+            width: 200px; height: 200px;
+            background: var(--kw-cyan);
+            top: 40%; right: -3%;
+            opacity: 0.04;
+            animation-delay: 4s;
+        }
+
+        @keyframes glowPulse {
+            0%, 100% { opacity: 0.03; transform: scale(0.9); }
+            50%      { opacity: 0.10; transform: scale(1.15); }
+        }
+
+        /* ── Circuit SVG ── */
+        .circuit-svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .circuit-svg .c-base {
+            fill: none;
+            stroke: rgba(6, 182, 212, 0.22);
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .circuit-svg .c-light {
+            fill: none;
+            stroke: rgba(6, 182, 212, 0.85);
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 0.12 0.88;
+            stroke-dashoffset: 0;
+            filter: drop-shadow(0 0 5px rgba(6, 182, 212, 0.6))
+                   drop-shadow(0 0 12px rgba(6, 182, 212, 0.25));
+            animation: cTravel var(--d, 5s) ease-in-out var(--dl, 0s) infinite;
+        }
+
+        .circuit-svg .c-node {
+            fill: rgba(6, 182, 212, 0.06);
+            stroke: rgba(6, 182, 212, 0.30);
+            stroke-width: 1.5;
+            animation: cNode var(--d, 5s) ease-in-out var(--dl, 0s) infinite;
+        }
+
+        @keyframes cTravel {
+            0%, 5%   { stroke-dashoffset: 0;     opacity: 0; }
+            10%      { stroke-dashoffset: 0;     opacity: 1; }
+            70%      { stroke-dashoffset: -0.88; opacity: 1; }
+            82%      { stroke-dashoffset: -0.88; opacity: 0; }
+            100%     { stroke-dashoffset: -0.88; opacity: 0; }
+        }
+
+        @keyframes cNode {
+            0%, 65%  { fill: rgba(6, 182, 212, 0); stroke: rgba(6, 182, 212, 0.12); filter: none; }
+            75%      { fill: rgba(6, 182, 212, 0.30); stroke: rgba(6, 182, 212, 0.55);
+                       filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.4)); }
+            90%, 100% { fill: rgba(6, 182, 212, 0); stroke: rgba(6, 182, 212, 0.12); filter: none; }
+        }
+
+        /* ── Loader card (center) ── */
+        .loader-card {
+            position: relative;
+            z-index: 10;
+            background: #fff;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border-radius: 20px;
+            padding: 28px 28px 24px;
+            width: 340px;
+            border: 1.5px solid rgba(124, 58, 237, 0.18);
+            box-shadow:
+                0 8px 40px rgba(124, 58, 237, 0.10),
+                0 2px 12px rgba(217, 70, 166, 0.06);
+        }
+
+        .loader-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 21px;
+            background: linear-gradient(135deg, rgba(122, 92, 255, 0.2), rgba(255, 79, 163, 0.1), rgba(56, 217, 255, 0.15));
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .loader-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .loader-card-logo {
+            font-family: 'Anton', sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: linear-gradient(135deg, var(--kw-violet), var(--kw-pink), var(--kw-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .loader-card-dots {
+            display: flex;
+            gap: 5px;
+        }
+
+        .loader-card-dots span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.10);
+        }
+
+        .loader-card-dots span:first-child {
+            background: var(--kw-cyan);
+            box-shadow: 0 0 6px rgba(56, 217, 255, 0.5);
+        }
+
+        /* Segmented progress bar */
+        .progress-segments {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+
+        .progress-segment {
+            flex: 1;
+            height: 32px;
+            background: rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .progress-segment.filled {
+            background: linear-gradient(135deg, var(--kw-violet), var(--kw-pink));
+            border-color: rgba(122, 92, 255, 0.3);
+            box-shadow: 0 0 12px rgba(122, 92, 255, 0.2);
+        }
+
+        .progress-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-status {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #06b6d4;
+        }
+
+        .progress-percent {
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.40);
+            font-family: 'Press Start 2P', monospace;
+            font-size: 11px;
+        }
+
+        /* ── Floating cards ── */
+        .float-card {
+            position: absolute;
+            z-index: 5;
+            background: #fff;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 16px;
+            border: 1.5px solid rgba(124, 58, 237, 0.15);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 1px 6px rgba(0,0,0,0.03);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .float-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Card: Useful Info (top right) */
+        .card-info {
+            top: 8%;
+            right: 6%;
+            padding: 22px 26px;
+            max-width: 300px;
+        }
+
+        .card-info::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 17px;
+            background: linear-gradient(135deg, rgba(56, 217, 255, 0.20), rgba(122, 92, 255, 0.08));
+            z-index: -1;
+            opacity: 0.35;
+        }
+
+        .card-info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .card-info-title {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #06b6d4;
+        }
+
+        .card-info-dots {
+            display: flex;
+            gap: 5px;
+        }
+
+        .card-info-dots span {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.10);
+        }
+
+        .card-info-dots span:first-child {
+            background: var(--kw-cyan);
+        }
+
+        .card-info p {
+            font-size: 13px;
+            line-height: 1.65;
+            color: rgba(0, 0, 0, 0.50);
+            margin-bottom: 8px;
+        }
+
+        .card-info p:last-child { margin-bottom: 0; }
+
+        /* Card: Tagline (bottom left) */
+        .card-tagline {
+            bottom: 8%;
+            left: 5%;
+            padding: 32px 36px;
+            max-width: 320px;
+        }
+
+        .card-tagline::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 17px;
+            background: linear-gradient(135deg, rgba(122, 92, 255, 0.2), rgba(255, 79, 163, 0.10));
+            z-index: -1;
+            opacity: 0.35;
+        }
+
+        .card-tagline-text {
+            font-family: 'Anton', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            color: rgba(0, 0, 0, 0.60);
+        }
+
+        .card-tagline-sub {
+            margin-top: 14px;
+            font-family: 'Anton', sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            background: linear-gradient(135deg, var(--kw-violet), var(--kw-pink), var(--kw-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Card: Tech stack (top left) */
+        .card-tech {
+            top: 12%;
+            left: 5%;
+            padding: 20px 24px;
+            max-width: 220px;
+        }
+
+        .card-tech::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 17px;
+            background: linear-gradient(135deg, rgba(122, 92, 255, 0.15), rgba(56, 217, 255, 0.10));
+            z-index: -1;
+            opacity: 0.35;
+        }
+
+        .card-tech-title {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--kw-violet);
+            margin-bottom: 12px;
+        }
+
+        .card-tech-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .card-tech-list li {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            color: #06b6d4;
+            padding: 6px 10px;
+            background: rgba(6, 182, 212, 0.06);
+            border: 1px solid rgba(6, 182, 212, 0.15);
+            border-radius: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Card: Year badge (bottom right) */
+        .card-year {
+            bottom: 10%;
+            right: 8%;
+            padding: 24px 30px;
+            text-align: center;
+        }
+
+        .card-year::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 17px;
+            background: linear-gradient(135deg, rgba(255, 79, 163, 0.18), rgba(56, 217, 255, 0.10));
+            z-index: -1;
+            opacity: 0.35;
+        }
+
+        .card-year-number {
+            font-family: 'Anton', sans-serif;
+            font-size: 42px;
+            background: linear-gradient(135deg, var(--kw-violet), var(--kw-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .card-year-label {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.35);
+            margin-top: 6px;
+        }
+
+        /* ── Fade out ── */
+        .loader-screen.fade-out {
+            opacity: 0;
+            transition: opacity 0.7s ease;
+            pointer-events: none;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .loader-card {
+                width: 280px;
+                padding: 20px 20px 16px;
+            }
+
+            .progress-segment {
+                height: 24px;
+            }
+
+            /* Top-right: info */
+            .card-info {
+                top: 2%;
+                right: 3%;
+                left: auto;
+                bottom: auto;
+                max-width: 190px;
+                padding: 12px 14px;
+            }
+
+            .card-info p {
+                font-size: 10px;
+                line-height: 1.5;
+            }
+
+            .card-info-title {
+                font-size: 9px;
+                margin-bottom: 8px;
+            }
+
+            .card-info-header {
+                margin-bottom: 8px;
+            }
+
+            /* Bottom-left: tagline */
+            .card-tagline {
+                bottom: 2%;
+                left: 3%;
+                right: auto;
+                top: auto;
+                padding: 16px 18px;
+                max-width: 200px;
+            }
+
+            .card-tagline-text {
+                font-size: 15px;
+            }
+
+            .card-tagline-sub {
+                font-size: 13px;
+                margin-top: 8px;
+            }
+
+            /* Top-left: year */
+            .card-year {
+                top: 2%;
+                left: 3%;
+                right: auto;
+                bottom: auto;
+                padding: 12px 16px;
+            }
+
+            .card-year-number {
+                font-size: 28px;
+            }
+
+            .card-year-label {
+                font-size: 7px;
+                letter-spacing: 1.5px;
+            }
+
+            /* Bottom-right: tech */
+            .card-tech {
+                top: auto;
+                left: auto;
+                bottom: 2%;
+                right: 3%;
+                max-width: 160px;
+                padding: 12px 14px;
+            }
+
+            .card-tech-title {
+                font-size: 8px;
+                margin-bottom: 8px;
+            }
+
+            .card-tech-list li {
+                font-size: 5.5px;
+                padding: 4px 7px;
+            }
+
+            .card-tech-list {
+                gap: 4px;
+            }
+
+            .circuit-svg .c-base {
+                stroke-width: 2;
+                stroke: rgba(6, 182, 212, 0.28);
+            }
+
+            .circuit-svg .c-light {
+                stroke-width: 2;
+                filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.6))
+                       drop-shadow(0 0 14px rgba(6, 182, 212, 0.3));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .loader-card {
+                width: 250px;
+                padding: 16px 16px 12px;
+            }
+
+            .progress-segment {
+                height: 20px;
+            }
+
+            .card-info {
+                max-width: 160px;
+                padding: 10px 12px;
+            }
+
+            .card-info p {
+                font-size: 9px;
+                line-height: 1.4;
+            }
+
+            .card-tagline {
+                padding: 14px 16px;
+                max-width: 175px;
+            }
+
+            .card-tagline-text {
+                font-size: 13px;
+            }
+
+            .card-tagline-sub {
+                font-size: 11px;
+            }
+
+            .card-tech {
+                max-width: 140px;
+                padding: 10px 12px;
+            }
+
+            .card-tech-list li {
+                font-size: 5px;
+                padding: 3px 6px;
+            }
+
+            .card-year {
+                padding: 10px 14px;
+            }
+
+            .card-year-number {
+                font-size: 24px;
+            }
+
+            .card-year-label {
+                font-size: 6px;
+            }
+
+            .loader-glow--1 { width: 180px; height: 180px; }
+            .loader-glow--2 { width: 150px; height: 150px; }
+            .loader-glow--3 { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-screen" id="loaderScreen">
+
+        <!-- Background -->
+        <div class="loader-bg">
+            <div class="loader-bg__gradient"></div>
+            <div class="loader-glow loader-glow--1"></div>
+            <div class="loader-glow loader-glow--2"></div>
+            <div class="loader-glow loader-glow--3"></div>
+        </div>
+
+        <!-- Circuit lines — DESKTOP (1440x900 viewBox) -->
+        <svg class="circuit-svg circuit-desktop" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Top-left cluster -->
+            <g style="--d:5s;--dl:0s;">
+                <path d="M 15 35 H 90 V 130 H 170" pathLength="1" class="c-base"/>
+                <path d="M 15 35 H 90 V 130 H 170" pathLength="1" class="c-light"/>
+                <circle cx="170" cy="130" r="4" class="c-node"/>
+            </g>
+            <g style="--d:3.5s;--dl:2.5s;">
+                <path d="M 55 10 V 80 H 130" pathLength="1" class="c-base"/>
+                <path d="M 55 10 V 80 H 130" pathLength="1" class="c-light"/>
+                <circle cx="130" cy="80" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:4s;--dl:6s;">
+                <path d="M 10 200 H 65 V 270 H 140" pathLength="1" class="c-base"/>
+                <path d="M 10 200 H 65 V 270 H 140" pathLength="1" class="c-light"/>
+                <circle cx="140" cy="270" r="3" class="c-node"/>
+            </g>
+            <g style="--d:6s;--dl:1s;">
+                <path d="M 25 350 V 290 H 100 V 230" pathLength="1" class="c-base"/>
+                <path d="M 25 350 V 290 H 100 V 230" pathLength="1" class="c-light"/>
+                <circle cx="100" cy="230" r="4" class="c-node"/>
+            </g>
+            <!-- Top-right cluster -->
+            <g style="--d:5.5s;--dl:0.5s;">
+                <path d="M 1425 30 H 1350 V 120 H 1275" pathLength="1" class="c-base"/>
+                <path d="M 1425 30 H 1350 V 120 H 1275" pathLength="1" class="c-light"/>
+                <circle cx="1275" cy="120" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4s;--dl:4s;">
+                <path d="M 1385 15 V 85 H 1310" pathLength="1" class="c-base"/>
+                <path d="M 1385 15 V 85 H 1310" pathLength="1" class="c-light"/>
+                <circle cx="1310" cy="85" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:3.5s;--dl:7.5s;">
+                <path d="M 1430 200 V 260 H 1370 V 320" pathLength="1" class="c-base"/>
+                <path d="M 1430 200 V 260 H 1370 V 320" pathLength="1" class="c-light"/>
+                <circle cx="1370" cy="320" r="3" class="c-node"/>
+            </g>
+            <!-- Left mid/bottom -->
+            <g style="--d:5s;--dl:3s;">
+                <path d="M 10 500 H 75 V 430 H 150" pathLength="1" class="c-base"/>
+                <path d="M 10 500 H 75 V 430 H 150" pathLength="1" class="c-light"/>
+                <circle cx="150" cy="430" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4.5s;--dl:5.5s;">
+                <path d="M 30 650 V 590 H 95 V 530" pathLength="1" class="c-base"/>
+                <path d="M 30 650 V 590 H 95 V 530" pathLength="1" class="c-light"/>
+                <circle cx="95" cy="530" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:6.5s;--dl:2s;">
+                <path d="M 15 780 H 80 V 710 H 160" pathLength="1" class="c-base"/>
+                <path d="M 15 780 H 80 V 710 H 160" pathLength="1" class="c-light"/>
+                <circle cx="160" cy="710" r="4" class="c-node"/>
+            </g>
+            <g style="--d:3.5s;--dl:8s;">
+                <path d="M 70 870 H 135 V 810" pathLength="1" class="c-base"/>
+                <path d="M 70 870 H 135 V 810" pathLength="1" class="c-light"/>
+                <circle cx="135" cy="810" r="3" class="c-node"/>
+            </g>
+            <!-- Right mid/bottom -->
+            <g style="--d:5.5s;--dl:1.5s;">
+                <path d="M 1435 480 H 1370 V 400 H 1300" pathLength="1" class="c-base"/>
+                <path d="M 1435 480 H 1370 V 400 H 1300" pathLength="1" class="c-light"/>
+                <circle cx="1300" cy="400" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4s;--dl:6.5s;">
+                <path d="M 1420 620 V 560 H 1350 V 500" pathLength="1" class="c-base"/>
+                <path d="M 1420 620 V 560 H 1350 V 500" pathLength="1" class="c-light"/>
+                <circle cx="1350" cy="500" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:5s;--dl:3.5s;">
+                <path d="M 1430 750 H 1360 V 680 H 1290" pathLength="1" class="c-base"/>
+                <path d="M 1430 750 H 1360 V 680 H 1290" pathLength="1" class="c-light"/>
+                <circle cx="1290" cy="680" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4.5s;--dl:8.5s;">
+                <path d="M 1390 860 V 800 H 1320" pathLength="1" class="c-base"/>
+                <path d="M 1390 860 V 800 H 1320" pathLength="1" class="c-light"/>
+                <circle cx="1320" cy="800" r="3.5" class="c-node"/>
+            </g>
+            <!-- Center top/bottom (subtle) -->
+            <g style="--d:7s;--dl:2s;">
+                <path d="M 700 10 V 70 H 780 V 125" pathLength="1" class="c-base"/>
+                <path d="M 700 10 V 70 H 780 V 125" pathLength="1" class="c-light"/>
+                <circle cx="780" cy="125" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:6s;--dl:4.5s;">
+                <path d="M 660 890 V 830 H 740 V 775" pathLength="1" class="c-base"/>
+                <path d="M 660 890 V 830 H 740 V 775" pathLength="1" class="c-light"/>
+                <circle cx="740" cy="775" r="3.5" class="c-node"/>
+            </g>
+            <!-- Extra density -->
+            <g style="--d:4s;--dl:1s;">
+                <path d="M 200 10 V 60 H 270" pathLength="1" class="c-base"/>
+                <path d="M 200 10 V 60 H 270" pathLength="1" class="c-light"/>
+                <circle cx="270" cy="60" r="3" class="c-node"/>
+            </g>
+            <g style="--d:3.5s;--dl:5s;">
+                <path d="M 1240 10 V 55 H 1170" pathLength="1" class="c-base"/>
+                <path d="M 1240 10 V 55 H 1170" pathLength="1" class="c-light"/>
+                <circle cx="1170" cy="55" r="3" class="c-node"/>
+            </g>
+            <g style="--d:5s;--dl:7s;">
+                <path d="M 300 890 V 840 H 370 V 785" pathLength="1" class="c-base"/>
+                <path d="M 300 890 V 840 H 370 V 785" pathLength="1" class="c-light"/>
+                <circle cx="370" cy="785" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:4.5s;--dl:9s;">
+                <path d="M 1150 895 V 840 H 1080" pathLength="1" class="c-base"/>
+                <path d="M 1150 895 V 840 H 1080" pathLength="1" class="c-light"/>
+                <circle cx="1080" cy="840" r="3" class="c-node"/>
+            </g>
+        </svg>
+
+        <!-- Circuit lines — MOBILE (400x900 viewBox) -->
+        <svg class="circuit-svg circuit-mob" viewBox="0 0 400 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Top-left -->
+            <g style="--d:5s;--dl:0s;">
+                <path d="M 8 25 H 55 V 100 H 120" pathLength="1" class="c-base"/>
+                <path d="M 8 25 H 55 V 100 H 120" pathLength="1" class="c-light"/>
+                <circle cx="120" cy="100" r="4" class="c-node"/>
+            </g>
+            <g style="--d:3.5s;--dl:3s;">
+                <path d="M 30 10 V 60 H 90" pathLength="1" class="c-base"/>
+                <path d="M 30 10 V 60 H 90" pathLength="1" class="c-light"/>
+                <circle cx="90" cy="60" r="3" class="c-node"/>
+            </g>
+            <!-- Top-right -->
+            <g style="--d:5.5s;--dl:0.5s;">
+                <path d="M 392 30 H 340 V 110 H 280" pathLength="1" class="c-base"/>
+                <path d="M 392 30 H 340 V 110 H 280" pathLength="1" class="c-light"/>
+                <circle cx="280" cy="110" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4s;--dl:4s;">
+                <path d="M 370 10 V 70 H 310" pathLength="1" class="c-base"/>
+                <path d="M 370 10 V 70 H 310" pathLength="1" class="c-light"/>
+                <circle cx="310" cy="70" r="3" class="c-node"/>
+            </g>
+            <!-- Left mid -->
+            <g style="--d:4.5s;--dl:2s;">
+                <path d="M 8 250 H 60 V 190 H 120" pathLength="1" class="c-base"/>
+                <path d="M 8 250 H 60 V 190 H 120" pathLength="1" class="c-light"/>
+                <circle cx="120" cy="190" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:5s;--dl:5.5s;">
+                <path d="M 10 380 V 320 H 70 V 270" pathLength="1" class="c-base"/>
+                <path d="M 10 380 V 320 H 70 V 270" pathLength="1" class="c-light"/>
+                <circle cx="70" cy="270" r="4" class="c-node"/>
+            </g>
+            <!-- Right mid -->
+            <g style="--d:5s;--dl:1.5s;">
+                <path d="M 392 280 H 335 V 220 H 275" pathLength="1" class="c-base"/>
+                <path d="M 392 280 H 335 V 220 H 275" pathLength="1" class="c-light"/>
+                <circle cx="275" cy="220" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4s;--dl:6.5s;">
+                <path d="M 390 400 V 345 H 330 V 290" pathLength="1" class="c-base"/>
+                <path d="M 390 400 V 345 H 330 V 290" pathLength="1" class="c-light"/>
+                <circle cx="330" cy="290" r="3.5" class="c-node"/>
+            </g>
+            <!-- Left bottom -->
+            <g style="--d:6s;--dl:3.5s;">
+                <path d="M 8 550 H 70 V 490 H 130" pathLength="1" class="c-base"/>
+                <path d="M 8 550 H 70 V 490 H 130" pathLength="1" class="c-light"/>
+                <circle cx="130" cy="490" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4.5s;--dl:7s;">
+                <path d="M 15 700 V 640 H 80 V 590" pathLength="1" class="c-base"/>
+                <path d="M 15 700 V 640 H 80 V 590" pathLength="1" class="c-light"/>
+                <circle cx="80" cy="590" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:5.5s;--dl:2.5s;">
+                <path d="M 10 810 H 70 V 750 H 130" pathLength="1" class="c-base"/>
+                <path d="M 10 810 H 70 V 750 H 130" pathLength="1" class="c-light"/>
+                <circle cx="130" cy="750" r="4" class="c-node"/>
+            </g>
+            <g style="--d:3.5s;--dl:8.5s;">
+                <path d="M 50 880 H 110 V 830" pathLength="1" class="c-base"/>
+                <path d="M 50 880 H 110 V 830" pathLength="1" class="c-light"/>
+                <circle cx="110" cy="830" r="3" class="c-node"/>
+            </g>
+            <!-- Right bottom -->
+            <g style="--d:5s;--dl:4.5s;">
+                <path d="M 392 560 H 330 V 500 H 270" pathLength="1" class="c-base"/>
+                <path d="M 392 560 H 330 V 500 H 270" pathLength="1" class="c-light"/>
+                <circle cx="270" cy="500" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4.5s;--dl:1s;">
+                <path d="M 390 720 V 660 H 325 V 610" pathLength="1" class="c-base"/>
+                <path d="M 390 720 V 660 H 325 V 610" pathLength="1" class="c-light"/>
+                <circle cx="325" cy="610" r="3.5" class="c-node"/>
+            </g>
+            <g style="--d:5.5s;--dl:6s;">
+                <path d="M 392 840 H 335 V 780 H 275" pathLength="1" class="c-base"/>
+                <path d="M 392 840 H 335 V 780 H 275" pathLength="1" class="c-light"/>
+                <circle cx="275" cy="780" r="4" class="c-node"/>
+            </g>
+            <g style="--d:4s;--dl:9s;">
+                <path d="M 360 890 V 845 H 300" pathLength="1" class="c-base"/>
+                <path d="M 360 890 V 845 H 300" pathLength="1" class="c-light"/>
+                <circle cx="300" cy="845" r="3" class="c-node"/>
+            </g>
+        </svg>
+
+        <!-- Loader Card (center) -->
+        <div class="loader-card">
+            <div class="loader-card-header">
+                <span class="loader-card-logo">Juana Monteagudo</span>
+                <div class="loader-card-dots">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="progress-segments" id="progressSegments">
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+                <div class="progress-segment"></div>
+            </div>
+            <div class="progress-footer">
+                <span class="progress-status" id="progressStatus">Inicializando...</span>
+                <span class="progress-percent" id="progressPercent">0%</span>
+            </div>
+        </div>
+
+        <!-- Card: Tech stack (top left) -->
+        <div class="float-card card-tech" id="cardTech">
+            <div class="card-tech-title">Stack</div>
+            <ul class="card-tech-list">
+                <li>REACT &bull; NODE.JS</li>
+                <li>TYPESCRIPT &bull; SQL</li>
+                <li>PYTHON &bull; POWER BI</li>
+                <li>IA &bull; AUTOMATIZACIÓN</li>
+            </ul>
+        </div>
+
+        <!-- Card: Useful Info (top right) -->
+        <div class="float-card card-info" id="cardInfo">
+            <div class="card-info-header">
+                <span class="card-info-title">Juana Monteagudo</span>
+                <div class="card-info-dots">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <p>Full Stack Developer especializada en apps web, automatización e inteligencia artificial.</p>
+            <p>Licenciada en Sistemas (UADE).</p>
+        </div>
+
+        <!-- Card: Tagline (bottom left) -->
+        <div class="float-card card-tagline" id="cardTagline">
+            <div class="card-tagline-text">
+                CODE &amp; LEARN,<br>
+                MODERN STACK,<br>
+                REAL RESULTS;
+            </div>
+            <div class="card-tagline-sub">
+                JUANA MONTEAGUDO
+            </div>
+        </div>
+
+        <!-- Card: Year badge (bottom right) -->
+        <div class="float-card card-year" id="cardYear">
+            <div class="card-year-number">2026</div>
+            <div class="card-year-label">PORTFOLIO &mdash; ACTIVE</div>
+        </div>
+
+    </div>
+
+    <script>
+        (function() {
+            // Show desktop or mobile circuits
+            var w = window.innerWidth;
+            if (w <= 768) {
+                var dt = document.querySelector('.circuit-desktop');
+                if (dt) dt.style.display = 'none';
+            } else {
+                var mb = document.querySelector('.circuit-mob');
+                if (mb) mb.style.display = 'none';
+            }
+
+            var segments = document.querySelectorAll('.progress-segment');
+            var percentText = document.getElementById('progressPercent');
+            var statusText = document.getElementById('progressStatus');
+            var loaderScreen = document.getElementById('loaderScreen');
+            var cardTech = document.getElementById('cardTech');
+            var cardInfo = document.getElementById('cardInfo');
+            var cardTagline = document.getElementById('cardTagline');
+            var cardYear = document.getElementById('cardYear');
+
+            var currentProgress = 0;
+            var totalSegments = segments.length;
+
+            var statuses = [
+                { at: 0,  text: 'Inicializando...' },
+                { at: 15, text: 'Cargando assets...' },
+                { at: 35, text: 'Compilando módulos...' },
+                { at: 55, text: 'Renderizando UI...' },
+                { at: 75, text: 'Optimizando...' },
+                { at: 90, text: 'Casi listo...' },
+                { at: 100, text: 'Listo ✓' }
+            ];
+
+            function getStatus(p) {
+                var s = statuses[0].text;
+                for (var i = 0; i < statuses.length; i++) {
+                    if (p >= statuses[i].at) s = statuses[i].text;
+                }
+                return s;
+            }
+
+            function updateProgress() {
+                var filledCount = Math.floor((currentProgress / 100) * totalSegments);
+
+                for (var i = 0; i < segments.length; i++) {
+                    if (i < filledCount) {
+                        segments[i].classList.add('filled');
+                    } else {
+                        segments[i].classList.remove('filled');
+                    }
+                }
+
+                percentText.textContent = Math.round(currentProgress) + '%';
+                statusText.textContent = getStatus(currentProgress);
+
+                // Show cards at thresholds
+                if (currentProgress >= 8)  cardTech.classList.add('visible');
+                if (currentProgress >= 20) cardInfo.classList.add('visible');
+                if (currentProgress >= 45) cardTagline.classList.add('visible');
+                if (currentProgress >= 65) cardYear.classList.add('visible');
+            }
+
+            function simulateLoading() {
+                var tick = function() {
+                    if (currentProgress < 85) {
+                        currentProgress += Math.random() * 16 + 8;
+                        if (currentProgress > 85) currentProgress = 85;
+                    } else if (currentProgress < 100) {
+                        currentProgress += Math.random() * 10 + 4;
+                        if (currentProgress > 100) currentProgress = 100;
+                    }
+
+                    updateProgress();
+
+                    if (currentProgress < 100) {
+                        setTimeout(tick, 250 + Math.random() * 350);
+                    } else {
+                        setTimeout(function() {
+                            loaderScreen.classList.add('fade-out');
+                            setTimeout(function() {
+                                window.location.href = 'main.html';
+                            }, 600);
+                        }, 500);
+                    }
+                };
+
+                setTimeout(tick, 400);
+            }
+
+            window.addEventListener('load', simulateLoading);
+
+            // Safety net
+            setTimeout(function() {
+                if (currentProgress < 100) {
+                    currentProgress = 100;
+                    updateProgress();
+                    setTimeout(function() {
+                        loaderScreen.classList.add('fade-out');
+                        setTimeout(function() {
+                            window.location.href = 'main.html';
+                        }, 600);
+                    }, 400);
+                }
+            }, 7000);
+        })();
+    </script>
+</body>
+</html>
