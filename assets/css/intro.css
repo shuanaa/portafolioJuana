@@ -925,7 +925,8 @@ a {
 
     /* Line 1 becomes vertical: KODAI / dash / WEB */
     .hero__giant--1 {
-        font-size: clamp(60px, 20vw, 140px);
+        /* Sized to the longest word (MONTEAGUDO, 10 letters) so it never needs to break mid-word */
+        font-size: clamp(40px, calc((100vw - 40px) / 5.4), 140px);
         flex-direction: column;
         align-items: center;
         gap: 0.1em;
@@ -937,7 +938,8 @@ a {
     .hero__word--right {
         display: block;
         text-align: center;
-        word-break: break-word;
+        word-break: keep-all;
+        white-space: nowrap;
     }
 
     .hero__dash {
@@ -1120,7 +1122,7 @@ a {
     }
 
     .hero__giant--1 {
-        font-size: clamp(70px, 22vw, 160px);
+        font-size: clamp(40px, calc((100vw - 40px) / 5.4), 160px);
     }
 
     .hero__giant--2 {
